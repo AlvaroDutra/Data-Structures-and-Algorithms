@@ -4,7 +4,7 @@ Este repositório contém anotações e materiais relacionados ao estudo de Data
 
 ## Conteúdo das Anotações
 
-Abaixo estão algumas anotações que fiz durante o seguimento do curso de DSA do Algusto Galego.
+Abaixo estão algumas anotações que fiz durante o seguimento do curso de DSA do [Algusto Galego](https://hub.la/g/L8wi9vio7WPnWbmF8ZIO).
 
 ---
 
