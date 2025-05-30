@@ -1,4 +1,4 @@
-from binerysearch import b_search
+from codes.Arrays.binery_search import b_search
 
 def e_search(arr, target):
     if arr[0] == target:
