@@ -12,14 +12,16 @@ Abaixo estão algumas anotações que fiz durante o seguimento do curso de DSA d
 
 * Espaço contido na memória que armazena elementos
 
-* Exemplo - [ 0000111100001111 ]
-        -
+>
+>* Exemplo - **[ 0000111100001111 ]**
+>
+>1. Pode ser interpretado como um array de 4 elementos com 4 bits cada: **[0000, 1111, 0000, 1111]**
+>
+>2. Pode ser interpretado como um array de 2 elementos com 8 bits cada: **[00001111, 00001111]**
+>
+>3. Pode ser interpretado como um array de 1 elemento com 16 bits cada: **[0000111100001111]**
 
-        1. Pode ser interpretado como um array de 4 elementos com 4 bits cada: **[0000, 1111, 0000, 1111]**
-
-        2. Pode ser interpretado como um array de 2 elementos com 8 bits cada: **[00001111, 00001111]**
-
-        3. Pode ser interpretado como um array de 1 elemento com 16 bits cada: **[0000111100001111]**
+---
 
 * Acesso por índice: Rápido, O(1), porque você vai direto à posição correta.
 
@@ -28,6 +30,7 @@ Abaixo estão algumas anotações que fiz durante o seguimento do curso de DSA d
 ~~~javascript
 //javascript
 //isso não é um array
+
 let a = []
 ~~~
 
@@ -37,7 +40,7 @@ let a = []
 
 ~~~rust
 //rust
-//rust
+
 let my_array: [i32; 4] = [1,2,3,4]
 ~~~
 
@@ -60,7 +63,7 @@ let my_array: [i32; 4] = [1,2,3,4]
 
     ![alt text](images/exemploO(n).png)
 
-    Porém, nesse algoritmo a complexidade **espacial** será **O(1)**, pois, apenas um espaço na memória foi alocado para armazenar o maior valor encontrado.
+  * Porém, nesse algoritmo a complexidade **espacial** será **O(1)**, pois, apenas um espaço na memória foi alocado para armazenar o maior valor encontrado.
 
     ![alt text](images/exemploO(1).png)
 
@@ -89,12 +92,11 @@ let my_array: [i32; 4] = [1,2,3,4]
 * **Exemplo:** Bubble sort ou geralmente um loop dentro de outro loop
 
 ~~~python
-for i in arr:
-        for j in arr:
-~~~
+#python
 
 for i in arr:
-        for j in arr:
+    for j in arr:
+~~~
 
 ### O(n!)
 
@@ -102,7 +104,7 @@ for i in arr:
 
 ## Binary Trees (Árvores Binárias)
 
-Estrutura de dados constituida de nós (*nodes*) onde cada nó aponta para dois nós filhos (*left* e *right*).
+* Estrutura de dados constituida de nós (*nodes*) onde cada nó aponta para dois nós filhos (*left* e *right*).
 
 ![alt text](images/binary_tree.png)
 
@@ -110,17 +112,17 @@ Estrutura de dados constituida de nós (*nodes*) onde cada nó aponta para dois 
 
 ## Grafos
 
-Estrutura de dados constituida de nós que são ligados por vértices.
+* Estrutura de dados constituida de nós que são ligados por vértices.
 
 ![alt text](images/grafos.png)
 
-Suas vértices podem ter valores. Por exemplo, cada nó representar cidades e suas vértices a distância entre elas.
+* Suas vértices podem ter valores. Por exemplo, cada nó representar cidades e suas vértices a distância entre elas.
 
 ---
 
 ## Hashmap
 
-Dicionário, armazena chave/valor.
+* Dicionário, armazena chave/valor.
 
 * Inserir, remover ou buscar um item: Geralmente muito rápido, O(1), porque você vai direto ao compartimento certo. Mas no pior caso, pode ser O(n) se muitos itens forem para o mesmo compartimento (colisões).
 
@@ -158,7 +160,7 @@ Cada vagão nó carrega um item e sabe quem é o próximo nó. Para percorrer os
 
 ## Stack (pilha)
 
-Pilha em estrutura de dados segue a regra **LIFO (*last in first out*)** onde o último elemento adicionado na pilha é o primeiro a sair dela. Por isso tem a noção de empilhar os itens.
+* Pilha em estrutura de dados segue a regra **LIFO (*last in first out*)** onde o último elemento adicionado na pilha é o primeiro a sair dela. Por isso tem a noção de empilhar os itens.
 
 ![alt text](images/stackLIFO.png)
 
