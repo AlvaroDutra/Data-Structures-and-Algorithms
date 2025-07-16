@@ -25,3 +25,16 @@ class Solution:
                     table_dist = distances.get(key, float('inf'))
                     if dist + v < table_dist:
                         distances[key] = dist + v
+                        heapq.heappush(min_heap, (dist + v))
+
+        _max = -1
+        if len(distances) < n:
+            return _max
+        
+        for key, v in distances.items():
+            _max = max(_max, v)
+
+        if _max == 0: return 0
+
+        return _max
+
